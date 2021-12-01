@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<style>
+    /*Style in introduction (I'm Jojo)*/
+    .roundedpic {
+        margin-left: 50px;
+    }
+
+    .bgfont1 {
+        color: turquoise;
+    }
+
+    .bgfont {
+        color: turquoise;
+        margin-left: 30%;
+        height: 50vh;
+    }
+
+    .bg {
+        background: linear-gradient(-35deg, #191970 35%, #000080 0%);
+        padding-top: 40px;
+    }
+
+    /*End of style in introdution (I'm Jojo)*/
+    /*Start of style in navbar section*/
+    .nav-color {
+        background: linear-gradient(-45deg, #000080 45%, #191970 0%);
+    }
+
+    .nav-item {
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: turquoise;
+        text-transform: uppercase;
+    }
+
+    /*End of style in navbar section*/
+    /*This part is for style in calculator*/
+    .main {
+        border: 1px solid black;
+        width: 210px;
+        background: linear-gradient(to right, #000080, #191970);
+        border-radius: 5px;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        padding: 5px;
+    }
+
+    .row1 {
+        padding: 2px;
+        margin: 5px;
+        background-color: #000080;
+        border-radius: 5px;
+    }
+
+    .row1>.one {
+        border: 1px solid black;
+        width: 39px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .extend {
+        border-radius: 5px;
+        margin-top: 5px;
+        height: 30px;
+        background-color: #191970;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: monospace;
+    }
+
+    .one {
+        background-color: #191970;
+        color: turquoise;
+    }
+
+    #clear {
+        background-color: #191970;
+        color: turquoise;
+    }
+
+    /*End of style in calculator*/
+    /*Style in Project Section*/
+    button {
+        background-color: #191970;
+        color: turquoise;
+    }
+
+    button:hover {
+        background-color: #000080;
+        color: blue;
+    }
+
+    .project1 {
+        background: linear-gradient(-45deg, #000080 45%, #191970 0%);
+    }
+
+    .project {
+        color: turquoise;
+        letter-spacing: 0.3px;
+    }
+
+    /*End of style in Project Section*/
+    /*Start of TOOL Section*/
+    h2 {
+        color: turquoise;
+    }
+
+    .tools1 {
+        background: linear-gradient(-45deg, #000080 45%, #191970 0%);
+    }
+
+    .toolsection1 {
+        background-image: url(https://i.pinimg.com/originals/a2/7d/14/a27d14a27b5ef7d35c241d5cc9c1deb4.png);
+        background-repeat: no repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .toolsection2 {
+        background-image: url(https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .toolsection3 {
+        background-image: url(https://www.freepnglogos.com/uploads/javascript-png/javascript-shield-logo-icon-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .toolsection4 {
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/217d5ea0-623d-40b1-9b31-027b904a5f15/ddjrgww-846ce429-3b0d-4ad8-bf6d-ac52dfe48201.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxN2Q1ZWEwLTYyM2QtNDBiMS05YjMxLTAyN2I5MDRhNWYxNVwvZGRqcmd3dy04NDZjZTQyOS0zYjBkLTRhZDgtYmY2ZC1hYzUyZGZlNDgyMDEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G0SE64OMLNEGI8vXb21JRl13RMfER1VP8Kh2Ig3oJaQ);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    /*End TOOLS Section*/
+    /*Start of Contact Section*/
+    .contact1 {
+        background-color: #191970;
+        color: turquoise;
+    }
+
+    .contact2 {
+        background: linear-gradient(-45deg, #000080 45%, #191970 0%);
+        color: turquoise;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="container-fluid-sm">
+            <!--Start of NavBar Section-->
+            <div>
+                <ul class="nav nav-color justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--End of Navbar Section-->
+            <!--Start Of About Section-->
+            <div style="background-color: blue;">
+                <div class="card border-0" style="max-width: 700px; margin: auto; background-color: blue;">
+                    <div class="row g-0" style="margin-top: 100px; gap:5px; height: 40vh; background-color: blue;">
+                        <div class="col col-add">
+                            <img src="imagefolder/image2.jpg" class="rounded-circle roundedpic"
+                                alt="Application picture ">
+                        </div>
+                        <div class="col" width: 100px; height: 300px;">
+                            <div class="bgfont1">
+                                <h3>Hi! I'm Jojo,</h3>
+                                <p>A Web Developer</p>
+                                <p>I'm a career shifter, from being into different jobs to found something that i really
+                                    enjoyed
+                                    doing. I find this career more than a job.However, it's not easy but it's worth it.
+                                </p>
+                                <p><b>From NO STACK to FULL STACK</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="bgfont">
+                <h2 id="About">About</h2>
+                <p>Education</p>
+                <p>School: Polytechnic University of the Philippines</p>
+                <p>Course: Bachelor of Science in Entrepreneurial Management</p>
+                <p>Technical Training Program: Web Development Traning</p>
+                <p>Conducted by: Kodego.ph</p>
+                <p>Civil Service Eligibility: Career Service Professional Examination</p>
+                <p>Rating: Passed</p>
+            </div>
+        </div>
+        <!--End of About Section-->
+        <!--Start Project Section-->
+        <div class="project1" style="height: 70vh;">
+            <h2 id="Project" class="project" style="text-align: center;">Projects</h2>
+            <div class="project2" style="display: flex; justify-content: space-around;">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.ibb.co/X2WpBqn/online-magazine.png" class="card-img-top"
+                        alt="online magazine project" height="280px" style="cursor: pointer;">
+                    <div class="card-body" style="background-color:#191970 ">
+                        <p class="card-text"
+                            style="text-align: center;border-radius: 5px; cursor: pointer; font-size: 20px; letter-spacing: 0.3px;text-transform:capitalize; font-family: verdana; color: turquoise;">
+                            Online Magazine Project</p>
+                        <div class="button" style="text-align: center;">
+                            <a target="_blank" href="https://jojodelossantos1563.github.io/home1.html"><button
+                                    style="border-radius: 5px;">Click me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Calculator Section-->
+                <div>
+                    <h1>E-Abacus</h1>
+                    <div class="main">
+                        <form name="cal">
+                            <input class="extend" name="textview">
+                        </form>
+                        <input type="button" class="button" id="clear" value="Clear" onClick="c()">
+
+
+                        <div class="row1">
+                            <input class="one" type="button" value="9" onClick="insert(9)">
+                            <input class="one" type="button" value="8" onClick="insert(8)">
+                            <input class="one" type="button" value="7" onclick="insert(7)">
+                            <input class="one" type="button" value="+" onclick="insert('+')"><br>
+
+
+                            <input class="one" type="button" value="6" onclick="insert(6)">
+                            <input class="one" type="button" value="5" onclick="insert(5)">
+                            <input class="one" type="button" value="4" onclick="insert(4)">
+                            <input class="one" type="button" value="-" onclick="insert('-')"><br>
+
+                            <input class="one" type="button" value="3" onClick="insert(3)">
+                            <input class="one" type="button" value="2" onClick="insert(2)">
+                            <input class="one" type="button" value="1" onclick="insert(1)">
+                            <input class="one" type="button" value="*" onclick="insert('*')">
+
+                            <input class="one" type="button" value="." onclick="insert('.')">
+                            <input class="one" type="button" value="0" onclick="insert(0)">
+                            <input class="one" type="button" value="=" onclick="equal('=')">
+                            <input class="one" type="button" value="/" onclick="insert('/')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Project Section-->
+        <!--Start of Tools Section-->
+        <div class="tools1" id="Tools" style="height:50vh;">
+            <h2 class="Tools" style="padding: 10px; text-align: center; letter-spacing: 0.5;">Tools</h2>
+            <div class="tools2" style="display: flex; justify-content: space-around; padding: 15px;">
+                <div class="toolsection1" style="width: 200px; height: 200px;"></div>
+                <div class="toolsection2" style="width: 200px; height: 200px;"></div>
+                <div class="toolsection3" style="width: 200px; height: 200px;"></div>
+                <div class="toolsection4" style="width: 200px; height: 200px;"></div>
+            </div>
+        </div>
+        <!--End of Tools Section-->
+        <!--Start of Contact Section-->
+        <div>
+            <div class="contact1" style="height: 10vh; text-align: center; padding-top: 10px; letter-spacing: 0.6;">
+                <h2 id="Contact">Contact Us</h2>
+            </div>
+            <div class="contact2"
+                style="height: 40vh; display: flex; justify-content: space-around; padding-top: 50px;">
+                <div style="width: 200px; height: 200px;">
+                    <div style="text-align:center;font-size: 50px;">
+                        <i class="bi bi-phone-vibrate-fill"></i>
+                    </div>
+                    <div style="text-align: center; font-weight: 100px;">
+                        <p><b>Phone Number</b></p>
+                        <p><b>+63 9054495236</b></p>
+                    </div>
+                </div>
+                <div style="width: 200px; height: 200px;">
+                    <div style="text-align:center;font-size: 50px;">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div style="text-align: center; font-weight: 100px;">
+                        <p><b>Address</b></p>
+                        <p><b>073 San pascual St.,Brgy.Commonwealth,Quezon City</b></p>
+                    </div>
+                </div>
+                <div style="width: 200px; height: 200px;">
+                    <div style="padding-top: 10px; text-align: center; font-size: 20px;">
+                        <p><b>Social Media Account</b></p>
+                    </div>
+                    <div style="display: flex; justify-content: space-around; font-size: 30px;">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-google"></i>
+                    </div>
+                    <div>
+                        <p><b>jojodelossantos1563@yahoo.com</b></p>
+                        <p><b>https://github.com/jojodelossantos1563</b></p>
+                        <p><b>delossantosjojo848@gmail.com</b></p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Contact Section-->
+
+
+        </div>
+    </div>
+    <!--Script for e-calculator-->
+    <script>
+        function insert(num) {
+            document.cal.textview.value = document.cal.textview.value + num;
+        }
+        function equal() {
+            let opr = document.cal.textview.value;
+            if (opr) {
+                document.cal.textview.value = eval(opr)
+            }
+            else {
+                console.log('unknown data');
+            }
+        }
+        function c() {
+            document.cal.textview.value = null;
+        }
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
